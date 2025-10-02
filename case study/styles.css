@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+  font-family: Cormorant-Garamondns;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+#welcome-title {
+  font-size: 19px !important;
+  color: #0D539C !important;
+}
+
+/* Hero Section */
+.hero {
+  background: url(assets/klpicture.jpg) center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(5, 5, 5, 0.21);
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+/* About Section */
+#about h2 {
+  color: #0D539C;     
+  font-family: Cormorant-Garamondns; 
+  font-weight: 700;
+}
+/* about section paragraphs */
+#about p {
+  color: #0D539C;      
+  font-family: Monserrat ;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Explore Button */
+.explore-btn {
+  text-decoration: none;
+  background-color: #dfe8f2; 
+  color: #0D539C;
+  border: none;
+  border-radius: 25px;   /* round corners */
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #0D539C;  
+  color: #cfe4ec;        
+}
+
+/* Card Hover Effect */
+.card:hover img, .gallery-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Cuisine Section */
+#cuisine h5 {
+  color: #0D539C; 
+}
+
+#cuisine p {
+  color: #333333; 
+}
+/* cuisine section headings */
+#cuisine h2 {
+  color: #0D539C; 
+  font-family: Cormorant-Garamondns; 
+  font-weight: 700; 
+}
+
+/* cuisine section paragraphs */
+#cuisine p {
+  color: #0D539C;         
+  font-family: Monserrat; 
+  font-size: 16px;        /* adjust size */
+  line-height: 1.6;       /*spacing */
+}
+
+/* Map Section */
+#map h2 {
+  color: #0D539C;              /* Theme blue for title */
+  font-family: Cormorant-Garamondns; 
+  font-weight: 700;
+}
+
+#map p {
+  color: #0D539C;                 
+  font-family: Monserrat;
+  font-size: 16px;
+}
+
+/* Attractions Section */
+#attractions h2 {
+  color: #0D539C;              
+  font-family: Cormorant-Garamondns; /*Font */
+  font-weight: 700;
+}
+
+/* Attractions Descriptions */
+#attractions p {
+  color: #0D539C;  
+  font-weight: 600;
+}
+
+/* Attraction Images */
+#attractions img {
+  width: 100%;       
+  height: 550px;     
+  object-fit: cover;  
+  border-radius: 8px; 
+}
+
+
+/* Gallery Section */
+#gallery h2 {
+  color: #0D539C;              /* theme blue */
+  font-family: Cormorant-Garamondns; 
+  font-weight: 700;
+}
+/* Gallery Images */
+#gallery img {
+  width: 100%;
+  height: 250px;    /* set a fixed height */
+  object-fit: cover; /* zoom/crop to fit */
+}
+
+/* Footer */
+.footer {
+  background-color: #0D539C; /* theme blue */
+  color: white;              /* text color */
+}
+
+.footer a {
+  color: #0d3865; 
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffffff; /* white on hover */
+}
+
+/* Navbar Active */
+.nav-link.active {
+  font-weight: 600;
+  color: #0d3865 !important;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Hover Effects */
+.card, .gallery-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover, .gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
